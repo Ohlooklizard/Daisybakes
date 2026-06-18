@@ -1,56 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blank Clean Wave Template</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <style>
-    * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+        }
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, sans-serif;
-      color: white;
-      background-image: url("background.jpg");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      overflow: hidden;
-    }
+        /* Top Hero Section (Baby Blue Background) */
+        .hero-section {
+            background-color: #E3F2FD; /* Soft Baby Blue */
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            position: relative;
+        }
 
-    .title {
-      position: fixed;
-      top: 18px;
-      left: 24px;
-      z-index: 50;
-      font-size: 32px;
-      font-weight: bold;
-      text-shadow: 0 0 8px black, 0 0 14px black;
-    }
+        /* Content Placeholders */
+        .content-box {
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            z-index: 2;
+        }
 
-    .page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 18px;
-    }
+        .placeholder-title {
+            font-size: 2.5rem;
+            color: #1565C0; /* Deeper blue for contrast */
+            margin-bottom: 20px;
+        }
 
-  </style>
+        /* Wave Divider Styles */
+        .wave-container {
+            position: absolute;
+            bottom: -1px; /* Prevents tiny gaps between sections */
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave-container svg {
+            position: relative;
+            display: block;
+            width: calc(130% + 1.3px); /* Slightly wider to prevent scaling gaps */
+            height: 120px;
+            transform: rotateY(180deg);
+        }
+
+        /* The color of the SVG fills must match the section below it */
+        .wave-container .wave-fill {
+            fill: #FFFFFF; 
+        }
+
+        /* Bottom Section (White Background) */
+        .bottom-section {
+            background-color: #FFFFFF;
+            min-height: 40vh;
+            padding: 80px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
+<body>
 
-  <body>
-    
-    
-    <script>
- 
-</script>
+    <section class="hero-section">
+        <div class="content-box">
+            <h1 class="placeholder-title">Your Heading Here</h1>
+            <p style="color: #5C6BC0;">This area mimics the top half of the inspiration site. You can place your logo, navigation, or main header text right here.</p>
+        </div>
+
+        <div class="wave-container">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V60.26C1122.58,74.91,1053.27,110.66,985.66,92.83Z" class="wave-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="bottom-section">
+        <div class="content-box">
+            <p style="color: #78909C;">This is the lower content area. The wavy transition above is built entirely with code, meaning it scales beautifully on both desktop monitors and mobile screens.</p>
+        </div>
+    </section>
+
 </body>
 </html>
-
 
 
     
